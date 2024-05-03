@@ -1,0 +1,28 @@
+---
+import ButtonLight from "../components/buttons/Button-light.astro";
+---
+
+<nav
+  class="w-full bg-verde1 h-[80px] flex items-center justify-between md:max-w-[1200px] md:mx-auto"
+>
+  <div class="flex items-center mx-auto gap-8 md:justify-between md:w-full">
+    <img
+      src="/assets/images/Logo.png"
+      alt="logo"
+      class="w-24 h-10 my-auto ml-1"
+    />
+    <ul class="hidden gap-6 text-white md:flex">
+      <li>HOME</li>
+      <li>MENU</li>
+      <li>BLOGS</li>
+      <li>ACERCA DE</li>
+      <li>CONTACTO</li>
+    </ul>
+    <img
+      src="assets/icons/NaviOpen.png"
+      alt="boton menu"
+      class="w-12 h-12 my-auto md:hidden"
+    />
+    <ButtonLight title="Reservar" class="hidden md:flex" />
+  </div>
+</nav>

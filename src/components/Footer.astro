@@ -1,0 +1,42 @@
+---
+import ButtonLight from "./buttons/Button-light.astro";
+import iconSocial from "../constants";
+
+const date = new Date();
+const year = date.getFullYear();
+---
+
+<footer class="bg-verde1 text-white px-2 flex flex-col items-center gap-4">
+  <div class="gap-10 items-center w-full justify-between  border-b-2 border-dotted mt-4 md:flex md:items-center md:max-w-[1200px]">
+    <div>
+      <img src="assets/images/Logo.png" alt="logo" class="w-20 mx-auto" />
+    </div>
+    <div class="mt-2">
+      <p>Contact</p>
+      <p>+1+86 852 346 000 info@foodzero.com</p>
+      <p>1959 Sepulveda Blvd. Culver City, CA, 90230</p>
+    </div>
+    <div class="my-2 py-2 flex flex-col gap-2 text-right">
+      <p>Never Miss a Recipe</p>
+      <div class="flex flex-col">
+        <input type="email" placeholder="Ingrese su correo" class="w-full mb-2 h-10"/>
+        <ButtonLight title="Subscribirse" class='w-1/2'/>
+      </div>
+      <p class="text-xs">
+        Join our subscribers and get best recipe delivered each week!
+      </p>
+    </div>
+  </div>
+  <div class="flex flex-col items-center my-4">
+    <p>© {year}. All rights Reserved</p>
+    <div class="flex gap-4 items-center my-4">
+      {
+        iconSocial.map((i) => (
+          <a href={i.url} target="_blank">
+            <img src={i.icon} alt={i.name} class="w-6" />
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</footer>
