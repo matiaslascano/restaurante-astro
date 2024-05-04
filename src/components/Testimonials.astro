@@ -1,0 +1,36 @@
+---
+import { testimonials } from "../constants";
+---
+
+<main class="bg-gray-100">
+  <div class="grid grid-cols-1 md:grid-cols-2 md:max-w-[1200px] md:mx-auto">
+    {
+      testimonials.map((test) => (
+        <div class="px-6 py-4">
+          <div>
+            <p class="text-lg font-semibold">{test.testimonial}</p>
+          </div>
+          <div class="flex justify-end mt-2 max-w-[300px]">
+            <div class="flex gap-4 items-center">
+              <img src={test.avatar} alt="test image" class="w-16" />
+              <p>{test.name}</p>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+    <div class="flex gap-2 items-center justify-end p-6">
+      <img
+        src="assets/icons/Icon_arrow-left.svg"
+        alt="flecha izquierda"
+        class="w-6"
+      />
+      <p>2/3</p>
+      <img
+        src="assets/icons/Icon_arrow-right.svg"
+        alt="flecha derecha"
+        class="w-6"
+      />
+    </div>
+  </div>
+</main>

@@ -1,0 +1,30 @@
+---
+import { blogs } from "../constants";
+---
+
+<main
+  class="grid grid-cols-1 md:grid-cols-2 md:mx-auto md:w-full bg-white md:place-items-center"
+>
+  {
+    blogs.map((blog) => (
+      <div class="px-4 my-4 md:max-w-[1200px]">
+        <img src={blog.image} alt="image blog" />
+        <div class="flex gap-2 items-center justify-center">
+          <img src={blog.avatar} alt="image avatar" class="w-[50px]" />
+          <p class="text-[10px]">{blog.name} - </p>
+          <p class="text-[10px]">{blog.day} - </p>
+          <p class="text-[10px]">{blog.hour} - </p>
+        </div>
+        <div class=" max-w-[275px] mx-auto md:max-w-[300px] md:mx-auto">
+          <h3 class="text-xl mb-4 border-b-4 border-black border-dotted">
+            {blog.title}
+          </h3>
+          <p>{blog.description}</p>
+          <p class="text-right">
+            <a href="/sagasg">Ver mas...</a>
+          </p>
+        </div>
+      </div>
+    ))
+  }
+</main>
