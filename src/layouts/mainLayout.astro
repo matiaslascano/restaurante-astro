@@ -1,17 +1,22 @@
 ---
-import Footer from "../components/Footer.astro";
-import NavBar from "../components/NavBar.astro";
+import Footer from "../components/index/Footer.astro";
+import NavBar from "../components/index/NavBar.astro";
+
+const { titulo } = Astro.props;
+
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{titulo}</title>
+    <ViewTransitions />
   </head>
-  <body class=" bg-verde1 text-verde1">
+  <body class="bg-verde1 text-verde1">
     <NavBar />
     <slot />
     <Footer />

@@ -132,6 +132,91 @@ const testimonials = [
         avatar: "/assets/images/Avatar1.png",
         testimonial: "“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus  Lorem ipsum dolor sit amet. ",
     },
-]
+];
 
-export { iconSocial, menu, features, blogs, categories, testimonials }
+const entrantes = [
+    {
+        id: 1,
+        titulo: "Ensalada de Quinoa y Vegetales Asados",
+        descripcion: "Una mezcla fresca de quinoa cocida, vegetales de temporada asados (como pimientos, calabacines y berenjenas), mezclados con hojas verdes frescas y aliñado con vinagreta de limón y hierbas frescas.",
+        precio: 12.50
+    },
+    {
+        id: 2,
+        titulo: "Tartar de Aguacate y Mango",
+        descripcion: "Aguacate maduro y mango fresco picados finamente y sazonados con lima, cilantro y un toque de chile. Servido con chips de plátano macho crujientes.",
+        precio: 11.00
+    },
+    {
+        id: 3,
+        titulo: "Carpaccio de Remolacha con Queso de Cabra",
+        descripcion: "Rodajas finas de remolacha cruda marinadas en aceite de oliva y vinagre balsámico, servidas con rúcula fresca, nueces tostadas y queso de cabra desmenuzado.",
+        precio: 10.75
+    }
+];
+
+const principales = [
+    {
+        id: 1,
+        titulo: "Risotto de Espárragos y Champiñones",
+        descripcion: "Risotto cremoso hecho con arroz Arborio, espárragos frescos, champiñones salteados, caldo vegetal y queso parmesano. Terminado con hierbas frescas y un toque de limón.",
+        precio: 18.50
+    },
+    {
+        id: 2,
+        titulo: "Salmón Glaseado con Miel y Jengibre",
+        descripcion: "Filete de salmón fresco glaseado con una mezcla de miel, jengibre y salsa de soja. Acompañado de verduras al vapor y arroz integral con semillas de sésamo.",
+        precio: 22.00
+    },
+    {
+        id: 3,
+        titulo: "Cazuela de Quinoa y Verduras de Temporada",
+        descripcion: "Una mezcla reconfortante de quinoa cocida con calabaza, brócoli, zanahorias y garbanzos, en una salsa de tomate casera y hierbas mediterráneas. Gratificado con queso feta desmenuzado.",
+        precio: 16.75
+    }
+];
+
+const postres = [
+    {
+        id: 1,
+        titulo: "Tarta de Manzana y Almendras",
+        descripcion: "Una tarta clásica con una twist saludable: base de masa quebrada integral rellena de manzanas frescas, almendras laminadas y un toque de canela. Horneada a la perfección y servida con una bola de helado de vainilla.",
+        precio: 9.00
+    },
+    {
+        id: 2,
+        titulo: "Mousse de Chocolate Amargo con Frutos Rojos",
+        descripcion: "Mousse ligera y aireada de chocolate amargo, endulzada con un toque de miel orgánica. Decorada con frutos rojos frescos como fresas y frambuesas. Una delicia indulgente pero equilibrada.",
+        precio: 10.50
+    },
+    {
+        id: 3,
+        titulo: "Helado Artesanal de Coco y Mango",
+        descripcion: "Una combinación refrescante de helado artesanal elaborado con leche de coco y trozos naturales de mango. Sin conservantes ni colorantes artificiales. Perfecto para cerrar una comida fresca y sabrosa.",
+        precio: 8.50
+    }
+];
+
+const tragos = [
+    {
+        id: 1,
+        titulo: "Mojito de Pepino y Albahaca",
+        descripcion: "Una refrescante variación del clásico mojito con rodajas de pepino fresco y hojas de albahaca. Combinado con ron blanco, jugo de lima, un toque de jarabe de agave y soda. Servido en vaso alto con hielo picado.",
+        precio: 12.00
+    },
+    {
+        id: 2,
+        titulo: "Gin-Tónico de Lavanda y Arándanos",
+        descripcion: "Una versión aromática del gin-tónico con gin premium infusionado con lavanda seca y adornado con arándanos frescos. Completado con tónica premium y una ramita de lavanda para decorar. Un trago elegante y floral.",
+        precio: 14.50
+    },
+    {
+        id: 3,
+        titulo: "Cóctel de Maracuyá y Hierbabuena",
+        descripcion: "Un cóctel tropical y refrescante con puré de maracuyá fresco, hojas de hierbabuena, vodka premium y un toque de jugo de limón. Agitado y servido en copa de martini, decorado con una hoja de hierbabuena.",
+        precio: 13.00
+    }
+];
+
+
+export { iconSocial, menu, features, blogs, categories, testimonials, entrantes, principales, postres, tragos }

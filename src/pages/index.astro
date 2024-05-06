@@ -1,16 +1,18 @@
 ---
-import Banner from "../components/Banner.astro";
-import BlogHome from "../components/BlogHome.astro";
-import Categories from "../components/Categories.astro";
-import Features from "../components/Features.astro";
-import Hero from "../components/Hero.astro";
-import OurMenu from "../components/OurMenu.astro";
-import Reservations from "../components/Reservations.astro";
-import Testimonials from "../components/Testimonials.astro";
+import Banner from "../components/index/Banner.astro";
+import BlogHome from "../components/index/BlogHome.astro";
+import Categories from "../components/index/Categories.astro";
+import Features from "../components/index/Features.astro";
+import Hero from "../components/index/Hero.astro";
+import OurMenu from "../components/index/OurMenu.astro";
+import Reservations from "../components/index/Reservations.astro";
+import Testimonials from "../components/index/Testimonials.astro";
 import MainLayout from "../layouts/mainLayout.astro";
+
+const title = Astro.props;
 ---
 
-<MainLayout>
+<MainLayout titulo="FoodZero - Home">
   <Hero />
   <OurMenu />
   <Banner />
