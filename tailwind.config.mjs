@@ -14,6 +14,9 @@ export default {
 			fontFamily: {
 				rufina: ['Rufina', 'serif'],
 				lato: ['Lato', 'sans-serif'],
+			},
+			backgroundImage: {
+				'heroIndex': "url(../public/assets/images/hero.webp)"
 			}
 		},
 	},

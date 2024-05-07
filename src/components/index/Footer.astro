@@ -1,6 +1,7 @@
 ---
 import ButtonLight from "../buttons/Button-light.astro";
-import {iconSocial} from "../../constants";
+import {iconSocial, links} from "../../constants";
+
 
 const date = new Date();
 const year = date.getFullYear();
@@ -13,7 +14,16 @@ const year = date.getFullYear();
     <div>
       <img src="assets/images/Logo.png" alt="logo" class="w-20 mx-auto" />
     </div>
-    <div class="mt-2">
+    <ul class="flex flex-col gap-4 pb-4">
+      {
+        links.map((l) => (
+          <li>
+            <a href={l.url}>{l.name}</a>
+          </li>
+        ))
+      }
+    </ul>
+    <div class="mt-2 text-right">
       <p>Contact</p>
       <p>+1+86 852 346 000 info@foodzero.com</p>
       <p>1959 Sepulveda Blvd. Culver City, CA, 90230</p>

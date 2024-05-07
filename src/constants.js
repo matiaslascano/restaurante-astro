@@ -218,5 +218,42 @@ const tragos = [
     }
 ];
 
+const contact = [
+    {
+        id: 1,
+        email: 'info@foodzero.com',
+        phone: '+86 852 346 000',
+        direction: '1959 Sepulveda Blvd. Culver City, CA, 90230'
+    }
+];
 
-export { iconSocial, menu, features, blogs, categories, testimonials, entrantes, principales, postres, tragos }
+const links = [
+    {
+        id: 1,
+        name: 'Home',
+        url: '/'
+    },
+    {
+        id: 2,
+        name: 'Menu',
+        url: '/menu'
+    },
+    {
+        id: 3,
+        name: 'Sobre Nosotros',
+        url: '/about'
+    },
+    {
+        id: 4,
+        name: 'Portfolio',
+        url: '/portfolio'
+    },
+    {
+        id: 5,
+        name: 'Contacto',
+        url: '/contact'
+    },
+];
+
+
+export { iconSocial, menu, features, blogs, categories, testimonials, entrantes, principales, postres, tragos, contact, links }
