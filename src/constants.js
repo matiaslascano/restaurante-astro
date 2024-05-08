@@ -250,6 +250,11 @@ const links = [
     },
     {
         id: 5,
+        name: 'Blog',
+        url: '/blog'
+    },
+    {
+        id: 6,
         name: 'Contacto',
         url: '/contact'
     },
