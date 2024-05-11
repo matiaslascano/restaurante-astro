@@ -1,7 +1,36 @@
 ---
-
+import { blogs } from "../../constants";
 ---
 
 <main class="bg-white">
-  <p class="text-gris2 pl-10 md:pl-40 py-4">Home /  <span class="font-bold text-verde1">Blog /</span></p>
+  <p class="text-gris2 pl-10 md:pl-40 py-4">
+    Home / <span class="font-bold text-verde1">Blog /</span>
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-2 mx-4 gap-4 md:max-w-[1200px] md:mx-auto">
+    {
+      blogs.map((blog) => (
+        <div  class="shadow-xl rounded-xl py-2 md:flex md:flex-col md:justify-center md:items-center">
+          <div>
+            <img src={blog.image} alt={blog.title}  class="rounded-xl shadow-xl"/>
+          </div>
+          <div class="flex text-xs justify-center items-center">
+            <img src={blog.avatar} alt={blog.name} class="w-14"/>
+            <p>{blog.name}</p> -<p>{blog.day}</p> -<p>{blog.hour}</p>
+          </div>
+          <div class="px-2">
+            <h3 class=" font-bold text-center mb-2 border-b-2 border-black border-dotted">{blog.title}</h3>
+            <p>{blog.description.slice(0, 50)}...</p>
+            <a href="#"><p class=" text-right">Read more...</p></a>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+  <div class="flex justify-center items-center gap-4 py-4">
+    <div class="border-2 border-black p-2">Prev</div>
+    <div class="border-2 border-black p-2">2</div>
+    <div class="border-2 border-black p-2">3</div>
+    <div class="border-2 border-black p-2">4</div>
+    <div class="border-2 border-black p-2">Next</div>
+  </div>
 </main>
